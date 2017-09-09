@@ -1,0 +1,4 @@
+[submodule "lora_gateway_service/pySX127x"]
+	path = lora_gateway_service/pySX127x
+	url = https://github.com/pointhi/pySX127x
+	branch = fork

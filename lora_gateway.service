@@ -1,0 +1,15 @@
+[Unit]
+Description=Lora gateway hw service
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/pi/lora_python_gateway/lora_gateway_service/
+ExecStart=/home/pi/lora_python_gateway/lora_gateway_service/lora_gateway_service.py
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
